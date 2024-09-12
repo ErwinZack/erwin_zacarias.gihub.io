@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Portfolio</title>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome CDN -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure the body takes full viewport height */
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header img {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .container {
+            flex: 1; /* Allow container to grow and push footer to bottom */
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
+        }
+        section {
+            padding: 20px 0;
+            border-bottom: 2px solid #ddd;
+        }
+        section h2 {
+            margin-top: 0;
+            color: #333;
+            font-size: 2em;
+        }
+        .skills, .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .skills div, .projects div {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(33.333% - 40px);
+            box-sizing: border-box;
+        }
+        .skills div h3, .projects div h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            position: relative; /* Ensure it does not overlap the content */
+        }
+        .social-links {
+            margin-top: 10px;
+        }
+        .social-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.5em;
+            margin: 0 10px;
+            display: inline-block;
+        }
+        .social-links a:hover {
+            color: #ccc; /* Lighten color on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="C:\Users\erwin\Pictures\Project\436347905_122126513558234145_5073926521231949532_n.jpg" alt="Profile Picture">
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="intro">
+            <h2>Introduction</h2>
+            <p>
+                Hello! My name is Erwin R. Zacarias, and I am currently a 2nd-year student studying at PHINMA Upang University Pangasinan pursuing a Bachelor of Science in Information Technology (BSIT).
+                 My passion for technology drives me to explore various aspects of IT and I am excited about technology and to keep on learning more about from web developing and expanding knowledge for building a simple project.
+            </p>
+        </section>
+        
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div>
+                    <h3>Basic Programming</h3>
+                    <p>Understanding and writing simple code in languages such as Python, Html, or Flutter.</p>
+                </div>
+                <div>
+                    <h3>Troubleshooting</h3>
+                    <p>Ability to diagnose and resolve common computer and software issues.</p>
+                </div>
+                <div>
+                    <h3>Communication Skills</h3>
+                    <p>Effective communication skills for working with team members and explaining technical issues to non-technical users.</p>
+                </div>
+                <div>
+                    <h3>Networking</h3>
+                    <p>Understanding the function of IP addresses for device communication, 
+                        DNS for translating website names,
+                         and the roles of LANs and WANs in network design provides 
+                         a solid foundation for network management.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div>
+                    <h3>Project 1(HTML)</h3>
+                    <P><h3>Title:Mega Bazaar</p></h3>
+                    <p>Desctiption: The main objective of our project Mega Bazaar is to offer a user-friendly e-commerce website that provides a simple shopping experience for customers, allowing them to browse, search, and purchase products 
+                        easily as well to build a simple online store where people can easily buy things they want. It should be easy for them to find what they're looking for.</p>
+                </div>
+                <div>
+                    <h3>Project 2(JAVA)</h3>
+                    <p><h3>Title:Anagram</p></h3>
+                    <p>Descripton: Anagram is a guessing word where you will guess or you will think of a new word from the given word. Anagram's purpose is to help you to expand  your thinking and to expand your  knowledge.
+                         It is a game where you can enhance your quick thinking and familiarity with vocabulary as you play a friendly, enjoyable interactive game.</p>
+                </div>
+                
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact</h2>
+            <p> You can reach me via email at <a href="mailto:your.email@example.com">erro.ezacarias.up@phinmaed.com</a>.</p>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 My Simple Portfolio</p>
+        <div class="social-links">
+            <a href="https://github.com/ErwinZack/erwin_zacarias.gihub.io" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61557024350641" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://ph.linkedin.com/in/erwin-rosario-zacarias-7788242a2" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
